@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Pastelaria Delivery</title>
+</head>
+
+<header>
+  <img id="logo" src="assets/logo-removebg-preview.png" alt="logo">
+  <ul>
+    <h1 id="title">Menino Beni Pastelaria</h1>
+    <h0 id="subtitle">Seu pastel quentinho na hora</h0>
+  </ul>
+
+</header>
+
+<body>
+  <div id="app">
+    <div id="menu">
+      <h2>Cardápio</h2>
+      <ul id="menu-list">
+        <li class="item">
+          <img src="assets/pastel.jpg" alt="pastel">
+          <span>Pastel de Carne</span>
+          -
+          <span>R$ 5,00</span>
+          <button onclick="addToCart('Pastel de Carne', 5.00)" , class="fas fa-plus" />
+        </li>
+        <li class="item">
+          <img src="assets/pastel.jpg" alt="pastel">
+          <span>Pastel de Queijo</span>
+          -
+          <span>R$ 4,50</span>
+          <button onclick="addToCart('Pastel de Queijo', 4.50)" , class="fas fa-plus" />
+        </li>
+        <li class="item">
+          <img src="assets/suco de laranja.jpg" alt="pastel">
+          <span>Suco de Laranja</span>
+          -
+          <span>R$ 3,00</span>
+          <button onclick="addToCart('Suco de Laranja', 3.00)" , class="fas fa-plus" />
+        </li>
+        <li class="item">
+          <img src="assets/Coca-Cola_Lata_750x600px.png" alt="pastel">
+          <span>Refrigerante Coca-Cola</span>
+          -
+          <span>R$ 2,50</span>
+          <button onclick="addToCart('Refrigerante Coca-Cola', 2.50)" , class="fas fa-plus" />
+        </li>
+      </ul>
+    </div>
+    <div id="cart">
+      <h2>Carrinho</h2>
+      <ul id="cart-list"></ul>
+      <p>Total: R$ <span id="total">0.00</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
